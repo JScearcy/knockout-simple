@@ -1,0 +1,16 @@
+﻿<h1>The purpose of this is to @ViewData["Purpose"] with ASP.NET MVC</h1>
+<div class="loading" data-bind="visible: loaded() == false">
+	<p>Loading...</p>
+</div>
+<div class="content" data-bind="visible: loaded">
+	<ul data-bind="foreach: people">
+		<li>
+			<ul>
+				<li>Name: <span data-bind="text: Name"></span></li>
+				<li>Age: <span data-bind="text: Age"></span></li>
+				<li>Weight: <span data-bind="text: Weight"></span></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
